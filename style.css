@@ -1,0 +1,193 @@
+
+* {
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif; /* Mặc định font chữ */
+}
+
+/* Cập nhật body */
+body {
+    background-color: #FFC0CB ;
+}
+
+/* Tiêu đề (header) */
+header {
+    background-image: url('https://i.pinimg.com/736x/5e/b6/39/5eb63933798e4c94f85f2103c96c9001.jpg');
+    background-size: cover;
+    background-position:center;
+    height: 30vh;
+    text-align:left;
+    color: black;
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử theo hàng ngang */
+    flex-direction: column; /* Đặt các phần tử trong header theo chiều dọc */
+    align-items: left; /* Căn giữa các phần tử theo chiều ngang */
+    justify-content: left; /* Căn giữa các phần tử theo chiều dọc */
+    
+    }
+    
+/* Logo và tiêu đề */
+header .logo {
+    display: flex; /* Sử dụng flexbox để logo và tiêu đề nằm trên một dòng */
+    align-items: center; /* Căn giữa logo và tiêu đề theo chiều dọc */
+    flex-direction: row; /* Đặt logo và tiêu đề theo chiều ngang */
+}
+
+/* Logo */
+header .logo img {
+    width: 80px; /* Kích thước logo */
+    margin-right: 10px; /* Khoảng cách giữa logo và tiêu đề */
+    border-radius: 50%;
+}
+
+/* Tiêu đề */
+header h1 {
+    font-family: 'Alex Brush', cursive;
+    font-size: 5em;
+    font-weight: bold;
+    color: black;
+    margin: 0; /* Xóa margin mặc định */
+}
+
+/* Câu tagline */
+header .tagline {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2em;
+    color: black;
+    margin-top: 1px; /* Tạo khoảng cách giữa tiêu đề và câu tagline */
+    padding-left: 250px;
+    ;
+ }
+/* Menu */
+nav {
+    background-color:white;
+    text-align: center;
+    padding: 10px 0;
+     }
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;}
+nav ul li a {
+    color:  #c10057;
+    font-size: 1.3em;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: "roboto condensed",cursive;
+}
+ 
+
+/* Nội dung chính */
+.content {
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+    background-color: white ;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    font-size: 1.2em;}
+.content h2 {
+    color: #cc0052;
+    font-style: italic;
+    font-size: 1.6em;
+}
+.content h3 {
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+    font-style: italic ;
+}
+.video{
+    width: auto;
+    height: 620px ;
+}
+a {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: inherit;
+  text-align: revert-layer; /* Đặt màu liên kết giống màu của văn bản xung quanh */
+}
+section {
+  margin-bottom: 30px; /* Khoảng cách giữa các section */
+  padding: 20px; /* Thêm khoảng cách padding cho nội dung */
+  background-color: #f9f9f9; /* Màu nền nhẹ cho cả 2 section */
+  border-radius: 8px; /* Bo góc mềm mại */
+}
+
+.section1 {
+  background-color: #FFF0F5; /* Màu nền cho section 1 */
+  margin-bottom: 30px; /* Khoảng cách giữa section 1 và section 2 */
+  border: 2px dotted pink;
+}
+
+.section2 {
+  background-color: #FFF0F5; /* Màu nền cho section 2 */
+  margin-bottom: 30px;}
+.section3{
+   background-color: #FFF0F5;
+   margin-bottom: 30px;
+}
+
+ /*Ảnh trang trí */
+.image {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    width: 20px;}
+.image img {
+    width: 5%;
+    border-radius: 10%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);}
+image-container {
+    display: flex; /* Dùng flexbox để căn các ảnh ngang nhau */
+    justify-content: space-between; /* Đảm bảo các ảnh có khoảng cách đều */
+    gap: 20px; /* Khoảng cách giữa các ảnh */
+    margin-bottom: 20px; /* Khoảng cách dưới ảnh */}
+/* Cấu hình cho ảnh */
+.image-container img {
+    width: 20%; /* Đảm bảo mỗi ảnh chiếm 48% chiều rộng của container */
+    height: auto; /* Giữ tỷ lệ ảnh */}
+.image-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px; /* Khoảng cách từ ảnh đến tiêu đề */}
+.container {
+    display: flex;
+    flex-direction: column; /* Chia theo chiều dọc */
+    padding: 100px;}
+.container img {
+            margin-right: 10px; /* khoảng cách giữa ảnh và link */}   
+/* Footer */
+Footer {
+    background-color: #c10057 ;
+    text-align: left;
+    padding: 5px;
+    margin-top: 20px;
+    font-family:"Teko", cursive;}
+.footer-content {
+    background-color: #e97c9d;
+    margin-left: 10px;
+    padding: 15px;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;}
+.info {
+    text-align: left;}
+.comment-box {
+    text-align: right;
+}
+.comment-box input {
+    padding: 5px;
+    width: 200px;}
+.comment-box button {
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;}
+.comment-text {
+    color: white;
+    font-size: x-large;
+}
